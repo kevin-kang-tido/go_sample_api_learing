@@ -1,6 +1,7 @@
 package main
 
 import (
+  
 	"go_sample_api/databases"
 	"go_sample_api/handlers"
 	"github.com/gin-gonic/gin"
@@ -23,7 +24,6 @@ func main() {
     bookHandler := &handlers.BookHandler{DB:db}
 
     // defualt gin router 
-
     router := gin.Default();
 
     // Author routes
